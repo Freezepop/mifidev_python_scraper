@@ -1,0 +1,9 @@
+Flask
+aiohttp
+SQLAlchemy
+flask_sqlalchemy
+tldextract
+beautifulsoup4
+lxml
+psycopg2-binary
+flasgger

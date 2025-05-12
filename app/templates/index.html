@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-краулер</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-size: 1rem;
+      color: #555;
+    }
+    input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Веб-краулер</h2>
+    <form method="POST" action="/crawl">
+      <div class="form-group">
+        <label for="start_url">Start URL:</label><br>
+        <input type="text" id="start_url" name="start_url" value="https://example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="max_depth">Max Depth:</label><br>
+        <input type="number" id="max_depth" name="max_depth" value="2">
+      </div>
+
+      <div class="form-group">
+        <label for="type">Тип сайта:</label><br>
+        <select id="type" name="type">
+          <option value="">Не выбрано</option>
+          <option value="wordpress">WordPress</option>
+          <option value="tilda">Tilda</option>
+          <option value="bitrix">Bitrix</option>
+          <option value="html5">HTML5</option>
+        </select>
+      </div>
+
+      <button type="submit">Начать краулинг</button>
+    </form>
+  </div>
+</body>
+</html>
