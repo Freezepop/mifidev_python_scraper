@@ -86,7 +86,6 @@ u\"]", "nav[class*=\"nav\"]", "nav[id*=\"nav\"]" ], "footer_selectors":[ "footer
             "https://blog.skillfactory.ru/ya-sam-nauchilsya-programmirovat-i-stal-timlidom/",
             "https://blog.skillfactory.ru/diana-gromova-ya-obozhala-himiyu-no-razocharovalas-v-nauke-i-stala-frontend-razrabotchikom/",
             "https://blog.skillfactory.ru/ya-sluzhil-v-policzii-a-teper-razrabatyvayu-obrazovatelnye-servisy/",
-            "https://skillfactory.ru/cases-n-reviews"
          ]
       },
       {"etc": "..."}
